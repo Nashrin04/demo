@@ -1,0 +1,48 @@
+package sabuProject;
+
+public class Encap {
+	private String name;
+	private String dept;
+	private int books;
+	public String getName() 
+	{ 
+		return name; 
+	}	 
+    public void setName(String name)
+    {
+    	this.name = name;
+    }
+    public String getDept()
+    {
+    	return dept;
+    }
+    public void setDept(String dept)
+    {
+    	this.dept = dept;
+    }
+    public int getBooks()
+    {
+    	return  books;
+    }
+    public void setBooks(int books) 
+    { 
+    	this.books = books ;
+    }
+    public class Main {
+        // main function
+        public static void main(String[] args)
+        {
+            Encap e = new Encap();
+            e.setName("SABU");
+            e.setDept("CSE");
+            e.setBooks(3);
+     
+            // Using methods to get the values from the
+            // variables
+            System.out.println("Name: " + e.getName());
+            System.out.println("Dept " + e.getDept());
+            System.out.println("Total no of books "+ e.getBooks());
+        }
+    }
+}
+	
